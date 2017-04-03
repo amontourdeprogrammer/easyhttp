@@ -1,17 +1,16 @@
 package main
 
 import (
-
-	"io"
-	"net/http"
+        "fmt"
+        "net/http"
 )
 
-
-func viewHandler(w http.ResponseWriter, r *http.Request){
-	io.WriteString(w, `{"hello":"world"})
+func viewHandler(w http.ResponseWriter, r *http.Request) {
+    title := r.URL.Path[len("/view/"):]
+    fmt.Fprintf(w, "<html><title>%s</title><body><h1>View : %s</h1></body></html>", title, title);
 }
 
 func main() {
- 	 http.HandleFunc("/" , viewHandler)
- 	 http.ListenAndServe(":8080", nil)
- }
+    http.HandleFunc("/view/", viewHandler)
+    http.ListenAndServe(":8080", nil)
+}
