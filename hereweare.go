@@ -6,9 +6,9 @@ import (
     "net/http"
 )
 
-func viewHandler(w http.ResponseWriter, r *http.Request) {
-    hello := r.URL.Path[len("/"):]
-    content, err := ioutil.ReadFile("web/" + hello)
+func handler(w http.ResponseWriter, r *http.Request) {
+    hereweare := r.URL.Path[len("/"):]
+    content, err := ioutil.ReadFile("web/" + hereweare)
     if err != nil {
         fmt.Fprintf(w, "Error : %s", err);
     } else {
@@ -17,7 +17,6 @@ func viewHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-    http.HandleFunc("/", viewHandler)
-    http.ListenAndServe(":8080", nil)
+    http.HandleFunc("/", handler)
+    http.ListenAndServe(":3000", nil)
 }
-
