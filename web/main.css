@@ -2,17 +2,17 @@ html, body, div, * {
   padding:0, margin:0
 }
 body {
-  background-color: #11a9e2;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0d86b3), to(#11a9e2));
+  background-color: blue;
+  /*background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0d86b3), to(#11a9e2));
   background-image: -moz-linear-gradient(#0d86b3, #11a9e2);
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;*/
 }
 
 h1 {
   text-align: center;
   font: bold 100px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #fff;
-  text-shadow: 0 1px 0 #ccc,
+  /*text-shadow: 0 1px 0 #ccc,
                0 2px 0 #c9c9c9,
                0 3px 0 #bbb,
                0 4px 0 #b9b9b9,
@@ -23,5 +23,5 @@ h1 {
                0 3px 5px rgba(0,0,0,.2),
                0 5px 10px rgba(0,0,0,.25),
                0 10px 10px rgba(0,0,0,.2),
-               0 20px 20px rgba(0,0,0,.15);
+               0 20px 20px rgba(0,0,0,.15);*/
 }
