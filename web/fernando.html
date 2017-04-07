@@ -1,12 +1,32 @@
-<!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8"/>
-    	<link rel="stylesheet" href="../main.css" type="text/css"/>
+		<meta charset="utf-8">
+    	<link rel="stylesheet" href="main.css">
  
 	</head>
 	<body>
- 		<h1>My BF is Fernando! </h1>
-   		<img src="http://dubleudansmesnuages.com/wp-content/uploads/2008/10/003-almada_negreiros_pessoa.jpg">
+
+ 		<h2>My BF is Fernando!</h2>
+   		<img src="http://dubleudansmesnuages.com/wp-content/uploads/2008/10/003-almada_negreiros_pessoa.jpg" border="1" name="refresh" id="img1">
+   		<img src="https://s-media-cache-ak0.pinimg.com/236x/1d/fe/05/1dfe0572371a38a2cb5ec61a5d249303.jpg" border="1" name="refresh" id="img2">
+   		<img src="http://joel.gaillard.free.fr/steph/coloriage_5_d_apres_buffet.jpg" border="1" name="refresh" id="img3">
+
+   		<script language="JavaScript" type="text/javascript">
+   		var t = 5
+   		images = new Array('http://dubleudansmesnuages.com/wp-content/uploads/2008/10/003-almada_negreiros_pessoa.jpg', 'https://s-media-cache-ak0.pinimg.com/236x/1d/fe/05/1dfe0572371a38a2cb5ec61a5d249303.jpg','http://joel.gaillard.free.fr/steph/coloriage_5_d_apres_buffet.jpg');
+
+   		function Start(){
+   			tmp = new Date();
+   			tmp = "?"+tmp.getTime();
+   			for (i=1;i<image.length;i++){
+   				document.getElementById("img"+i).src = images[i]+tmp;
+   			}
+   			setTimeout("Start()", t*1000)
+   		}
+   		Start();
+   		</script>
+
+
+   		
 	</body>
 </html>

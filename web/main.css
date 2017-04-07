@@ -1,14 +1,18 @@
 body {
-  background-color: blue;
-  color: white;
+  background-color: #D0D5D5;
   /*background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0d86b3), to(#11a9e2));
   background-image: -moz-linear-gradient(#0d86b3, #11a9e2);
   background-repeat: no-repeat;*/
 }
 
-h1 
+h2
 {
   text-align: center;
-  font: bold 100px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: blue;
+  font: bold 60px/1 "inherit", Helvetica, Arial, sans-serif;
+  color: #FEFEFE;
+}
+img {
+  display: block;
+  margin: auto;
+  border-radius: 10px
 }

@@ -19,8 +19,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 
 
 
-func main() {
-    http.Handle("web/main.css", http.StripPrefix("web/main.css", http.FileServer(http.Dir("web/main.css"))))
+func main() {    
     http.HandleFunc("/", handler)
     http.ListenAndServe(":8080", nil)
     
